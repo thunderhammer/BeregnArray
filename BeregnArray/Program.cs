@@ -8,6 +8,12 @@ namespace BeregnArray
 {
     class Program
     {
+
+        static (string, int ) Test3a() // Tuplet, only available as alternative to returning struct in 4.71 and onwards
+        {
+            return ("BOT", 1);
+        }
+
         static returtype BeregnOgSorterArray(int[] input)
         {
             returtype r2 = new returtype();
@@ -38,7 +44,7 @@ namespace BeregnArray
             {
                 Console.WriteLine(item.ToString());
             }
-
+            Console.WriteLine(Test3a());
 
 
         }
